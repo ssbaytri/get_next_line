@@ -1,8 +1,16 @@
-# Get Next Line
+<div align="center">
+  <h1>Get Next Line</h1>
+  <img src="https://drive.google.com/uc?id=13fb13GcGJBTMfbp22F_Oajd6EblK2UGF" alt="get_next_line Header" width="100%"></div>
+</div>
 
 <div align="center">
-  <img src="https://drive.google.com/uc?id=13fb13GcGJBTMfbp22F_Oajd6EblK2UGF" alt="get_next_line Header" width="100%">
+  
+  ![C](https://img.shields.io/badge/language-C-blue.svg)
+  ![42 School](https://img.shields.io/badge/school-42-blue)
+  [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/ft_printf)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 </div>
+
 
 ## Overview
 
@@ -106,4 +114,4 @@ Contributions, issue reports, and feature suggestions are welcome. Please adhere
 
 ## License
 
-[Specify Your License]
+Released under the MIT License. See the [LICENSE](LICENSE) file for details.
