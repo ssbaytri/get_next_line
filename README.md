@@ -1,6 +1,9 @@
 # Get Next Line
 
-![Project Header Image](link_to_your_header_image.png)
+![Project Header Image]
+<div align="center">
+  <img src="https://drive.google.com/uc?id=13fb13GcGJBTMfbp22F_Oajd6EblK2UGF" alt="get_next_line Header" width="100%">
+</div>
 
 ## 📝 Project Description
 
