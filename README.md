@@ -1,82 +1,109 @@
 # Get Next Line
 
-![Project Header Image]
 <div align="center">
   <img src="https://drive.google.com/uc?id=13fb13GcGJBTMfbp22F_Oajd6EblK2UGF" alt="get_next_line Header" width="100%">
 </div>
 
-## 📝 Project Description
+## Overview
 
-Get Next Line is a C programming project that implements a function to read lines from a file descriptor efficiently. The main goal is to create a function `get_next_line()` that reads a line from a file descriptor each time it's called.
+Get Next Line is a robust C programming project designed to efficiently read lines from file descriptors. The project focuses on implementing a versatile `get_next_line()` function that provides line-by-line reading capabilities with high performance and flexibility.
 
-## ✨ Key Features
+## Project Objectives
 
-- Reads lines from a file descriptor one at a time
-- Works with both file and standard input reading
-- Uses a configurable buffer size
-- Handles multiple file descriptors (bonus part)
-- Demonstrates the use of static variables in C
+- Implement a line-reading function for file descriptors
+- Demonstrate advanced C programming techniques
+- Manage memory efficiently
+- Handle diverse reading scenarios
 
-## 🛠 Compilation
+## Technical Specifications
 
-Compile the project with the following command:
+### Mandatory Implementation
+
+- **Function Signature:** `char *get_next_line(int fd)`
+- **Core Functionality:**
+  - Read lines from file descriptors
+  - Support standard input and file reading
+  - Return `NULL` on completion or error
+
+### Key Technical Challenges
+
+- Configurable buffer size
+- Single static variable usage
+- Multiple file descriptor management
+- Minimal memory overhead
+- No global variable utilization
+
+## Compilation
 
 ```bash
 cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c
 ```
 
-Note: The `BUFFER_SIZE` can be modified during compilation.
+### Compilation Flags
 
-## 📋 Requirements
+- `-Wall`: Enable all warnings
+- `-Wextra`: Additional warnings
+- `-Werror`: Treat warnings as errors
+- `-D BUFFER_SIZE`: Define custom buffer size
 
-- Written in C
-- Follows the Norm coding standards
-- No memory leaks
-- Proper memory management
-- Handles various buffer sizes
+## Project Structure
 
-## 🚀 Mandatory Part
-
-- Function prototype: `char *get_next_line(int fd)`
-- Returns a line read from the file descriptor
-- Returns `NULL` when nothing more to read or on error
-
-## 🌟 Bonus Part
-
-- Manage multiple file descriptors simultaneously
-- Use only one static variable
-- Additional files: 
-  - `get_next_line_bonus.c`
-  - `get_next_line_bonus.h`
-  - `get_next_line_utils_bonus.c`
-
-## 📦 Files to Submit
-
+### Mandatory Files
 - `get_next_line.c`
 - `get_next_line_utils.c`
 - `get_next_line.h`
 
-## 🧪 Testing
+### Bonus Files
+- `get_next_line_bonus.c`
+- `get_next_line_bonus.h`
+- `get_next_line_utils_bonus.c`
 
-Recommended to create test programs to verify:
-- Different buffer sizes
-- Various file types
-- Multiple file descriptors
-- Edge cases
+## Advanced Features (Bonus)
 
-## 📌 Notes
+- Simultaneous multiple file descriptor management
+- Flexible reading across different file types
+- Minimal static variable utilization
 
-- Avoid using `lseek()`
-- No global variables allowed
-- Undefined behavior if file descriptor changes between calls
+## Performance Considerations
 
-## 💡 Learning Objectives
+- Efficient memory allocation
+- Minimal system call overhead
+- Adaptable to various buffer sizes
+- Handles edge cases gracefully
 
-- Understand static variables in C
-- Implement efficient file reading
-- Practice memory management
-- Handle file descriptor reading
+## Learning Outcomes
+
+- Advanced C programming techniques
+- Memory management strategies
+- File I/O handling
+- Static variable manipulation
+
+## Best Practices
+
+- Avoid `lseek()` function
+- Prevent memory leaks
+- Handle undefined behaviors
+- Create comprehensive test cases
+
+## Potential Challenges
+
+- Managing different buffer sizes
+- Handling various file descriptor scenarios
+- Maintaining reading state between function calls
+- Efficient memory management
+
+## Recommended Testing Approach
+
+1. Validate with minimal buffer sizes
+2. Test with large buffer configurations
+3. Verify multiple file descriptor scenarios
+4. Check edge case handling
+5. Perform memory leak analysis
+
+## Contribution
+
+Contributions, issue reports, and feature suggestions are welcome. Please adhere to the project's coding standards and contribution guidelines.
 
 ## License
 
-[Your License Here]
+[Specify Your License]
